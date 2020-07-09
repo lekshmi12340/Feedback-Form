@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form for Tutorial</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		form{
+			background-color: lightgray;
+			border: 3px solid black;
+
+		}
+		button{
+			color: red;
+			text-align: center;
+			vertical-align: center;
+
+		}
+		header{
+			text-align: center;
+			font-size: 70px;
+
+		}
+		input{
+			padding: 12px 20px;
+			margin: 8px 0px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>Tutorial Feedback Form</header>
+	<form class="jumbotron">
+		<b><label>Enter your Name:</label>
+		<input type="text" name="text" required="" placeholder="Enter your Name"></input><br><br>
+		<label>Enter your age:</label>
+		<input type="number" name="number" required=""></input><br><br>
+		<label>Enter you Contact number:</label>
+		<input type="telephone" name="telephone" placeholder="Please Enter your 10 digit contact number"></input><br><br>
+		<label>Enter your Email:</label>
+		<input type="email" name="email"><br><br>
+		<label>Gender</label><br>
+		<input type="radio" name="gender">Male</input><br>
+		<input type="radio" name="gender">Female</input><br><br>
+		<label>How you came to know about our Tutorial??</label><br>
+		<input type="checkbox" name="source">Newspaper</input><br>
+		<input type="checkbox" name="source">Internet</input><br>
+		<input type="checkbox" name="source">By a friend</input><br><br>
+		<label>Give your rating from 1 to 5 </label><br>
+		<input type="radio" name="rating">1 (Best)</input><br>
+		<input type="radio" name="rating">2 (OK)</input><br>
+		<input type="radio" name="rating">3 (Average)</input><br>
+		<input type="radio" name="rating">4 (Need Improvement)</input><br>
+		<input type="radio" name="rating">5 (Worst)</input><br><br>
+		<label>How likely that you should recommend this to a friend???</label><br>
+		<input type="range" min=1 max=5 class= slider value = 3 name=""><br><br>
+
+		<label>What you like most in tutorial?</label><br>
+		<select>
+			<option value="Way of presentation">Way of presentation</option>
+			<option value="Content">Content</option>
+			<option value="Examples Mentioned">Examples Mentioned</option>
+		</select><br><br>
+		<label>Please provide your valuable feedback here:</label><br>
+		<input type="textarea" name=""><br><br>
+		<button type="submit" class="btn btn-primary">Submit</button></b>
+	</form>
+	<footer>Feedback Form</footer>
+
+</body>
+</html>
